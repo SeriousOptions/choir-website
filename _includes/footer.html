@@ -1,0 +1,28 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="{{ '/' | relative_url }}">Serious Options Choir</a>
+      <p>Adventurous repertoire. Creative performance.<br>Kamloops, British Columbia</p>
+    </div>
+    <div>
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="{{ '/about/' | relative_url }}">About the choir</a></li>
+        <li><a href="{{ '/performances/' | relative_url }}">Performances</a></li>
+        <li><a href="{{ '/join-the-choir/' | relative_url }}">Join the choir</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-heading">Follow along</h2>
+      <ul class="footer-links">
+        <li><a href="{{ site.facebook_url }}" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="{{ site.instagram_url }}" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <li><a href="{{ site.eventbrite_url }}" target="_blank" rel="noopener noreferrer">Eventbrite<span class="sr-only"> (opens in a new tab)</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{ 'now' | date: '%Y' }} Serious Options Choir. All rights reserved.</p>
+    <p>Photography courtesy of Aqua Vita Photography.</p>
+  </div>
+</footer>

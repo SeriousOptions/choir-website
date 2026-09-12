@@ -1,0 +1,28 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+	<a class="brand" href="{{ '/' | relative_url }}" aria-label="Serious Options Choir home">
+	  <img src="{{ '/assets/images/serious-options-logo.png' | relative_url }}" width="160" height="160" alt="" class="brand-mark">
+	  <span class="brand-name">Serious Options Choir</span>
+	</a>
+	<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
+	  <span class="sr-only">Open navigation</span>
+	  <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+	</button>
+	<nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+	  <ul>
+		{% assign nav_items = "Home|/,About|/about/,Performances|/performances/,Join the Choir|/join-the-choir/" | split: "," %}
+		{% for item in nav_items %}
+		  {% assign parts = item | split: "|" %}
+		  {% assign label = parts[0] %}
+		  {% assign path = parts[1] %}
+		  {% if page.url == path %}
+			<li><a href="{{ path | relative_url }}" aria-current="page">{{ label }}</a></li>
+		  {% else %}
+			<li><a href="{{ path | relative_url }}">{{ label }}</a></li>
+		  {% endif %}
+		{% endfor %}
+		<li><a class="nav-social" href="{{ site.instagram_url }}" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (opens in a new tab)</span></a></li>
+	  </ul>
+	</nav>
+  </div>
+</header>

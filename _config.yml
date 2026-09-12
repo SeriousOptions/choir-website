@@ -1,0 +1,43 @@
+title: Serious Options Choir
+tagline: Adventurous repertoire. Creative performance.
+description: >-
+  Serious Options Choir is a Kamloops, BC community choir known for performing
+  adventurous and unusual repertoire in creative ways.
+url: "https://seriousoptionschoir.ca"
+baseurl: ""
+lang: en-CA
+locale: en_CA
+timezone: America/Vancouver
+
+logo: /assets/images/serious-options-logo.png
+image: /assets/images/choir-hero.jpg
+email: seriousoptionschoir.bc@gmail.com
+location: Kamloops, British Columbia
+
+social:
+  name: Serious Options Choir
+  links:
+    - https://www.facebook.com/seriousoptions
+    - https://www.instagram.com/seriousoptionschoir/
+
+facebook_url: https://www.facebook.com/seriousoptions
+instagram_url: https://www.instagram.com/seriousoptionschoir/
+eventbrite_url: https://www.eventbrite.ca/o/serious-options-choir-60452444533
+
+permalink: pretty
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .archive
+  - .idea
+  - jekyll-webpage.iml

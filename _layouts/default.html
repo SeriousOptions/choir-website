@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en-CA' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#265564">
+    <meta name="color-scheme" content="light">
+    {% seo %}
+    <link rel="icon" href="{{ '/assets/images/serious-options-logo.png' | relative_url }}" type="image/png">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body class="page-{{ page.page_class | default: 'standard' }}">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    {% include header.html %}
+    <main id="main-content" tabindex="-1">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    <script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
+  </body>
+</html>
